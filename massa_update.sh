@@ -24,7 +24,7 @@ LimitNOFILE=65535
 WantedBy=multi-user.target" > /etc/systemd/system/massad.service
 fi
 
-local massa_version=`wget -qO- https://api.github.com/repos/massalabs/massa/releases/latest | jq -r ".tag_name"`
+massa_version=`wget -qO- https://api.github.com/repos/massalabs/massa/releases/latest | jq -r ".tag_name"`
 wget -qO $HOME/massa.tar.gz "https://github.com/massalabs/massa/releases/download/${massa_version}/massa_${massa_version}_release_linux.tar.gz"
 tar -xvf $HOME/massa.tar.gz
 rm -rf $HOME/massa.tar.gz
@@ -38,5 +38,5 @@ EOF
 
 systemctl daemon-reload && systemctl enable massad && systemctl restart massad
 
-local massa_addr=$(cd $HOME/massa/massa-client/ && ./massa-client wallet_info | grep Address | awk '{print $2}')
+massa_addr=$(cd $HOME/massa/massa-client/ && ./massa-client wallet_info | grep Address | awk '{print $2}')
 echo "massa wallet address: $massa_addr"

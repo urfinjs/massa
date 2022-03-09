@@ -1,9 +1,8 @@
 #!/bin/bash
 
-. $HOME/.bashrc && . $HOME/.bash_profile
-
-apt update && apt upgrade -y
+apt update
 apt install wget jq git build-essential pkg-config libssl-dev -y
+apt upgrade -y
 
 if [[ -n $(systemctl | grep massad) ]]; then
   systemctl stop massad

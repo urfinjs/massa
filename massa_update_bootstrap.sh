@@ -12,4 +12,4 @@ python3 <(wget -qO- https://raw.githubusercontent.com/urfinjs/massa/main/massa_u
 echo "New bootstrap list:"
 grep bootstrap_list /root/massa/massa-node/base_config/config.toml
 
-systemctl restart massad && sleep 5 && journalctl -u massad -n 25
+systemctl restart massad && sleep 10 && journalctl -u massad -n 25

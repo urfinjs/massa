@@ -4,16 +4,31 @@ import toml
 config_abspath = '/root/massa/massa-node/base_config/config.toml'
 
 bootstrap_list = [
-    ["185.217.126.178:31245", "7bKVu43o1e6MZsj9xsKFcq14B75vNjirTSW2umaaTMngfbWsL3"],
-    ["104.129.128.122:31245", "5EBePa834f8P3Ei6Vx7JFPzaq6JpsL4fDBRwePWfkiWM45yh6n"],
-    ["65.21.242.5:31245",  "6gkR8BbtpKCSkSoXtdmj1722Gp1iH49D2F8kJhGD6k1VhJrChH"],
-    ["51.250.18.248:31245",  "7tg9CfaM2xCiqyiZutpsagGrK5TtkU2paK7nLLoa21qdqjhZMR"],
-    ["135.181.112.215:31245", "6jeAcQYVTjiJnw4eyr8SMWAsAaMtWLN6HutNfVvB9TfV8EZEep"],
-    ["38.242.201.240:31245", "5yEwmraRY7wnEUZDzcWbnJ6sYqXaxcy8GfrDeJ6PTXx3HEKF92"],
-    ["194.163.166.47:31245",   "74a6newcBkijYx6YSaQcyHX5j5oSjF2wFEAahGb7XNxQZSfboF"],
-    ["194.163.182.239:31245", "6BDnKc5L7mpbW5K7c99TxZ5bQatpw2yiKPhTvPr49rNe9QnC7p"],
-    ["178.170.41.160:31245", "8mVVr2pyNgDqxBS9LCCmX8gBLAvc1R6wt5mwZgbZtj26oGmUWs"],
-    ["195.201.91.249:31245", "8UzkUgUTtdfntGsuUfbvmLZREnYYBU2mi6ggebcJsBsDTBX7z2"]
+    ["65.108.14.245:31245", "8KKWHVJd2LKeVBNmYVEnX2mcwm7aQ3onsaR9fyETjgCB4uiQTs"],
+    ["94.156.93.150:31245", "6FK8yGC1uQiTYdq4GfK8aNdC8MbLjfLzc5SaAwJ4snxsSDJsSU"],
+    ["5.188.88.251:31245", "6Pwd4zQ3MMHp8vDRdwJhBRShD9dB6DTSHbJx1sHK2yLBorV7fC"],
+    ["147.182.139.198:31245", "4zDLAs5zSfnS5VkBRUpwggNzVzkKT1eRH1gFdsHuYEh2GP9PZA"],
+    ["89.108.71.233:31245", "5rDHwG5hnaneMc1j3mWitzf7bXTwDThFkKeHbLJchQnaCmN5yS"],
+    ["49.12.44.71:31245", "6WQsWWF4D5rATBMtnUhuRLPxRkjoZNqqV2vwScDuvyBxCcm1mf"],
+    ["94.140.249.153:31245", "71NRk5K5qk77LsgZcQ69PGQaWwT8AH8xwSitz2usZBvwDmVo8S"],
+    ["109.205.181.58:31245", "7F5WDunitHr7Qcvj1QAiqg9WeNvpwe8X4475TgPhqd59jy1Zak"],
+    ["5.161.97.72:31245", "5u15ahYe7AWBYbFdLzGt8wm9UCtTVS4SX8EMKQfY9hGQYXkihQ"],
+    ["5.9.124.24:31245", "71aU88XGPfMYwqNasQD2g8v1gwG1rxfLxCu4LAq3WsEV3PLXjS"],
+    ["185.245.182.243:31245", "7vBgwLE8TFmtpr4XLi7fDS2i272DYF6YQCqFHvQBUotaJ2SQf2"],
+    ["45.85.147.46:31245", "5VGgcbPQVoq78Ss2SB69NZzXQwStbk1XkTMa2UbFUas4NVJYS4"],
+    ["65.108.161.101:31245", "5cbfPqXKvBDfiLPAidwjBQr8WEB4ewnYjVCtT5ZY9mJSCR4KoS"],
+    ["95.216.161.206:31245", "8C2k4nXnyvwxWBjaepmvQyKGytZN62BNTBjn1xBzeZcvga4Lqz"],
+    ["213.202.238.195:31245", "8GZMyvjqHNLjjxGTN6rewYbNQqvWxFJ2ro8pkXdUQru4pawVPK"],
+    ["95.179.215.97:31245", "6htuM82QYPJBqpMafscvwv23tombzvMWPBXGj5GgzQRYatQt6r"],
+    ["78.31.66.108:31245", "88tCL5YNbkn22gWzreRpKkThCJFbe4QiPT5KPnekvbcTBGd5YF"],
+    ["135.181.152.87:31245", "73z8huUL4KXkprtxrsYkSFyEycg64eoMf72JzX565ZL9EviSh2"],
+    ["162.55.175.11:31245", "5RqmXKEeBUtU2dRNvhKGcoTcrjynaz5ZRYYpdfiKEdKMH4Fn8P"],
+    ["82.64.138.122:31245", "8fUpgx86NWRdrUEn96pBWet515S3J5bSm1FtdhnJ4T71bWgdDD"],
+    ["194.233.87.52:31245", "8ZzcuJvfAmqXsA22kNV7TbeysASAvCzjPGG6kQZJQuvJeL7miL"],
+    ["45.150.67.107:31245", "8dq8YNHqUaSLZPasVWQj6QjSotrsDrygxYvphWE1FnKtVi8vDB"],
+    ["94.124.78.102:31245", "88gDnfVSyevm4byHHK5Ec2XZqsgomzt412Pscr7Ea1TmY8oQT7"],
+    ["194.163.171.44:31245", "8btkw4aVuj3HYVeg1AwPpD1wYFRPVp3Y5aEdcfEESFTjfhEVLB"],
+    ["62.141.44.130:31245", "7FFSm1whXfTr46qVy3oTr1u1VPhCGVNa2yzJ7zwD16mqgoe2aR"],
 ]
 
 with open(config_abspath, 'r') as fh:
